@@ -11,6 +11,13 @@
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
+btn.addEventListener('click', () => {
+search.classList.toggle('active')
+input.focus()
+})
 
   function _defineProperties(target, props) {
     for (var i = 0; i < props.length; i++) {
