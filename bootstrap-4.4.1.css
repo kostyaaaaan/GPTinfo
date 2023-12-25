@@ -61,8 +61,15 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-}
+} 
 
+.hover-image-scale img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.hover-image-scale img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
